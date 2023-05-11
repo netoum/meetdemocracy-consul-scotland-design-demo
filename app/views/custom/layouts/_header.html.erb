@@ -24,8 +24,8 @@
 
           <input class="ds_site-navigation__toggle" id="menu" type="checkbox" />
           <nav id="mobile-navigation" class="ds_site-navigation  ds_site-navigation--mobile" data-module="ds-mobile-navigation-menu">
-            <%= render Layout::SubnavigationComponent.new %>
             <%= render Layout::AccountMenuComponent.new(current_user) %>
+            <%= render Layout::SubnavigationComponent.new %>
           </nav>
        
           <nav class="ds_site-navigation">
