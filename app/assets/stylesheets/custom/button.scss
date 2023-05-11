@@ -1,0 +1,14 @@
+.button{
+    @extend .ds_button;
+  }
+.delete {
+  @extend .ds_button;
+  @extend .ds_button--cancel;
+
+   }
+
+.hollow {
+  @extend .ds_button;
+  @extend .ds_button--secondary;
+
+   }
