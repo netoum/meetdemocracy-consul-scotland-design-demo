@@ -1,7 +1,8 @@
 
-# Meet Democracy fork of Consul project
+# Meet Democracy public Consul fork using the Digital Scotland Design System 
 
-**NOTE** This is a **fork** of [Consul Project](https://github.com/consul/consul/).
+
+**NOTE** This is a **fork** of [Meet Democracy Consul](https://github.com/netoum/meetdemocracy-consul).
 
 Our sincere thanks and appreciation go out to Consul Project for the incredible work and support they have provided.
 
@@ -15,43 +16,20 @@ Meet democracy platform allows the participants of your community to debate and 
 
 ## What's new ?
 
-- Add a cookie consent form and a link to privacy page
-[gem 'cookies_eu'](https://github.com/infinum/cookies_eu)
-We are using the gem 'cookies_eu'
-Added custom CSS file: app/assets/stylesheets/custom/cookies_eu.scss
-If you wish to customize the style of the div the classes are:
+- Add JS and CSS for Digital Scotland Design System 
+Design and build accessible digital services for Scotland
+The Digital Scotland Design System provides static web assets for websites and web applications for the Scottish Government and other Scottish public sector bodies.
+The Design System is open source and free to use.
+[Digital Scotland Design System](https://designsystem.gov.scot/)
 
-```bash
-.cookies-eu                 /* main div */
-.cookies-eu-content-holder  /* content holder */
-.cookies-eu-button-holder   /* button holder */
-.cookies-eu-ok              /* button */
-.cookies-eu-link            /* link */
-```
-
-Translation ready in dozens of languages
-
-- Changes of Settings, Users, Dev Seeds images
-
-- Changes of layout for the devise pages ( signup / signin )
-
-- Changes of Vote count for debates and legislation proposals
-Changing the way debates votes are showed to the users. 
-Show total votes instead of vote score
-
-- Add Gem 'rails-timeago', '~> 2.0'
-Format the date in a pretty way ( 1 days ago, 1 month ago)
-Translation ready in dozens of languages
-Changes in views for Debates, Proposals and Comments
-[gem 'rails-timeago'](https://github.com/jgraichen/rails-timeago)
-
+- Add Button component
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-git clone https://github.com/netoum/meetdemocracy-consul.git
+git clone https://github.com/netoum/meetdemocracy-consul-scotland-design.git
 ```
 
 Go to the project directory
