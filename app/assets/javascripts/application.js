@@ -120,6 +120,8 @@
 //= require rails-timeago
 //= require rails-timeago-all
 
+//= require pattern-library
+
 //= require custom
 //= require_tree ./custom
 
