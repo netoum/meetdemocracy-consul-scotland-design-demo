@@ -1,0 +1,7 @@
+
+<li class="ds_site-navigation__item">
+  <%= link_to t("layouts.header.administration_menu"), "#", rel: "nofollow", class: "ds_site-navigation__link" %>
+  <%= link_list(*admin_links, class: "submenu menu", data: { submenu: true }) %>
+</li>
+
+
