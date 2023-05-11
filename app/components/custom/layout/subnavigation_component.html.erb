@@ -1,0 +1,49 @@
+
+            <ul class="ds_site-navigation__list">
+
+      <% if feature?(:debates) %>
+      <%= layout_menu_link_to t("layouts.header.debates"),
+                              debates_path,
+                              controller_name == "debates",
+                              accesskey: "1" %>
+  <% end %>
+  <% if feature?(:proposals) %>
+    <%= layout_menu_link_to t("layouts.header.proposals"),
+                            proposals_path,
+                            controller.class == ProposalsController,
+                            accesskey: "2" %>
+<% end %>
+<% if feature?(:polls) %>
+    <%= layout_menu_link_to t("layouts.header.poll_questions"),
+                              polls_path,
+                              controller_name == "polls" || (controller_name == "questions" && controller.class.module_parent == Polls),
+                              accesskey: "3" %>
+<% end %>
+<% if feature?(:legislation) %>
+    <%= layout_menu_link_to t("layouts.header.collaborative_legislation"),
+                            legislation_processes_path,
+                            controller.class.module_parent == Legislation,
+                            accesskey: "4" %>
+<% end %>
+<% if feature?(:budgets) %>
+    <%= layout_menu_link_to t("layouts.header.budgets"),
+                              budgets_path,
+                              controller_name == "budgets" || controller_name == "investments",
+                              accesskey: "5" %>
+<% end %>
+<% if feature?(:sdg) %>
+    <%= layout_menu_link_to t("layouts.header.sdg"),
+                            sdg_goals_path,
+                            controller_path == "sdg/goals" && action_name != "help",
+                            accesskey: "6" %>
+<% end %>
+<% if feature?(:help_page) %>
+    <%= layout_menu_link_to t("layouts.header.help"),
+                            help_path,
+                            current_page?(help_path),
+                            accesskey: "7" %>
+<% end %>
+
+            
+            </ul>
+ 
