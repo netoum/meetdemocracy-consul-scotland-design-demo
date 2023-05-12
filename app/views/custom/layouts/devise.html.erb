@@ -11,17 +11,22 @@
 
     <%= raw setting["html.per_page_code_body"] %>
 
-    <div class="wrapper">
-      <header>
-      <div class="top-bar small-12 column center">
-        <h1 class="logo margin">
-          <%= link_to root_path do %>
-            <%= image_tag(image_path_for("logo_header.png"), class: "float-left", alt: setting["org_name"]) %>
+    <header class="ds_site-header  ds_site-header--gradient" role="banner">
+      <div class="ds_wrapper">
+          <div class="ds_site-header__content">
+              <div class="ds_site-branding">
+                <%= link_to root_path, accesskey: "0", class:"ds_site-branding__logo  ds_site-branding__link" do %>
+            <%= image_tag(image_path_for("logo_small_black.png"), alt: setting["org_name"], class:"ds_site-branding__logo-image") %>
           <% end %>
-        </h1>
+                  <div class="ds_site-branding__title">
+                      Demonstration
+                  </div>
+                  
+              </div>
+          </div>
       </div>
     </header>
-  </div>
+
   <div class="wrapper">
 
         <div class="row">
