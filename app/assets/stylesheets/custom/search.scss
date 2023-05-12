@@ -1,0 +1,13 @@
+.advanced-search {
+  @extend .ds_button;
+  @extend .ds_button--secondary;
+  margin-bottom: 5px;
+}
+.search-form-header {
+  form {
+    [type]:not([type="button"], [type=checkbox], [type=file], [type=radio]) {
+      margin-bottom: 0;
+      height: 40px;
+    }
+  }
+}

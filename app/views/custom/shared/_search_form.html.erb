@@ -1,0 +1,15 @@
+<div id="search_form" class="search-form-header ds_site-search">
+  <%= form_tag search_path, method: :get, class:"ds_site-search__form" do %>
+  <label class="ds_label  visually-hidden" for="site-search"><%= t("shared.outline.searcher") %></label>
+  <div class="ds_input__wrapper  ds_input__wrapper--has-icon">
+    <input type="text" name="search" placeholder="<%= t("#{i18n_namespace}.placeholder") %>"
+    class="ds_input  ds_site-search__input"
+    value="<%= params[:search] %>" id="search_text">
+       <button type="submit" class="ds_button  js-site-search-button">
+          <span class="visually-hidden"><%= t("#{i18n_namespace}.button") %></span>
+          <span class="ds_icon icon-search"></span>
+        </button>
+  </div>
+  <% end %>
+</div>
+

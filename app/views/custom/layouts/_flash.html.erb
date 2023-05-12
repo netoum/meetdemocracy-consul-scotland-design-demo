@@ -1,0 +1,37 @@
+<% flash.each do |flash_key, flash_message| %>
+<div id="<%= flash_key %>" class="notice-container ds_notification  ds_reversed callout-slide" data-module="ds-notification"  data-closable>
+<% if flash_key == "alert" %>
+
+<div class="ds_wrapper">
+
+      <div class="ds_notification__content  ds_notification__content--has-close">
+          <div class="ds_notification__text">
+              <p> <%= sanitize(flash_message) %></p>
+          </div>
+          <button class="close-button-white" type="button" data-close>
+            <span class="visually-hidden"><%= t("application.close") %></span>
+            <%= material_icon.shape(:close).outlined %>
+          </button>
+
+       
+      </div>
+</div>
+<% else %>
+<div class="ds_wrapper">
+
+      <div class="ds_notification__content  ds_notification__content--has-close">
+          <div class="ds_notification__text">
+              <p> <%= sanitize(flash_message) %></p>
+          </div>
+
+          <button class="close-button-white" type="button" data-close>
+              <span class="visually-hidden"><%= t("application.close") %></span>
+              <%= material_icon.shape(:close).outlined %>
+
+        </button>
+      </div>
+</div>
+  <% end %>
+
+</div>
+<% end %>
