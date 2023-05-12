@@ -950,23 +950,23 @@ form {
   }
 }
 
-.notice-container {
-  min-width: $line-height * 12;
-  right: 24px;
-  top: 24px;
+// .notice-container {
+//   min-width: $line-height * 12;
+//   right: 24px;
+//   top: 24px;
 
-  @include breakpoint(medium) {
-    position: absolute;
-  }
+//   @include breakpoint(medium) {
+//     position: absolute;
+//   }
 
-  .notice {
-    height: $line-height * 4;
+//   .notice {
+//     height: $line-height * 4;
 
-    .notice-text {
-      width: 95%;
-    }
-  }
-}
+//     .notice-text {
+//       width: 95%;
+//     }
+//   }
+// }
 
 .callout {
   font-size: $small-font-size;
