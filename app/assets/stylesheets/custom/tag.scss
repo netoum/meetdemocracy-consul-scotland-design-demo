@@ -1,0 +1,54 @@
+.sdg-tag-list .sdg-goal-tag-list .more-goals, .tag-cloud a,
+.categories a,
+.geozone a,
+.sidebar-links a, .sdg-tag-list .sdg-target-tag-list a, .tags a, .debate .tags a,
+.proposal .tags a,
+.budget-investment .tags a,
+.legislation .tags a, .debate-show .tags a,
+.proposal-show .tags a,
+.poll-question-show .tags a,
+.budget-investment-show .tags a,
+.polls-show .tags a,
+.debate-quiz .tags a,
+.draft-panels .tags a,
+.debate-questions .tags a,
+.communities-show .tags a,
+.topic-show .tags a,
+.milestone-content .tags a,
+.sdg-tag-list .sdg-target-tag-list span,
+.tags span,
+.debate .tags span,
+.proposal .tags span,
+.budget-investment .tags span,
+.legislation .tags span,
+.debate-show .tags span,
+.proposal-show .tags span,
+.poll-question-show .tags span,
+.budget-investment-show .tags span,
+.polls-show .tags span,
+.debate-quiz .tags span,
+.draft-panels .tags span,
+.debate-questions .tags span,
+.communities-show .tags span,
+.topic-show .tags span,
+.milestone-content .tags span
+{ 
+  @extend .ds_tag;
+
+  &:hover {
+    background-color: $white;
+    color: $brand;
+    text-decoration: underline;
+    border-color: $brand;
+  }
+  &.is-active{
+    background-color: $white;
+    color: $brand;
+    text-decoration: underline;
+    border-color: $brand;
+
+  }
+}
+.label {
+    @extend .ds_tag;
+}  
