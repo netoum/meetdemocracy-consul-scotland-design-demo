@@ -1,0 +1,15 @@
+.order-links .submenu {
+    @extend .ds_tabs__list;
+    li {
+        @extend .ds_tabs__tab;
+    }
+    a {
+        @extend .ds_tabs__tab-link;
+        font-weight: normal!important;
+    }
+}
+
+.submenu a {
+    font-weight: normal;
+
+}
