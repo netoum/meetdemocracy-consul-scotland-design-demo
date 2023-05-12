@@ -34,6 +34,7 @@
 .milestone-content .tags span
 { 
   @extend .ds_tag;
+  font-size: small !important;
 
   &:hover {
     background-color: $white;
@@ -51,4 +52,6 @@
 }
 .label {
     @extend .ds_tag;
+    font-size: small !important;
+
 }  

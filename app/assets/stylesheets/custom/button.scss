@@ -9,3 +9,8 @@
   @extend .ds_button;
   @extend .ds_button--secondary;
 }
+
+.feeds-list a.see-all {
+  @extend .ds_button;
+  @extend .ds_button--secondary;
+}
