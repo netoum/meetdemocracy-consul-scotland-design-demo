@@ -10,7 +10,9 @@
 //
 // The variables you can override are defined in the
 // `_settings.scss` and `_consul_settings.scss` files.
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 
 $brand:             #0065bd !default;
 $brand-secondary:   #d9effc !default;
 $outline-focus:     2px solid #fdd522 !default;
+$body-font-family: "Roboto" !important !default;
