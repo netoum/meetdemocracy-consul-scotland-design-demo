@@ -1,0 +1,18 @@
+.cards-container {
+  @extend .ds_category-list;
+  @extend .ds_category-list--grid;
+  @extend .ds_category-list--narrow;
+}
+.card {
+  @extend .ds_card;
+  @extend .ds_card--has-hover;
+  p {
+    @extend .ds_category-item__link;
+  }
+}
+.card .figure-card {
+  @extend .ds_aspect-box;
+  img {
+    @extend .ds_aspect-box__inner;
+  }
+}
