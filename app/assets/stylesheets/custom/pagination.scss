@@ -1,0 +1,17 @@
+.pagination-centered {
+  @extend .ds_pagination;
+}
+.pagination {
+  @extend .ds_pagination__list;
+  li {
+    @extend .ds_pagination__item;
+  }
+  a {
+    @extend .ds_pagination__link;
+  }
+}
+.pagination .current {
+  @extend .ds_current;
+  @extend .ds_pagination__link;
+  color: $black;
+}
