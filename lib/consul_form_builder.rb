@@ -21,14 +21,15 @@ class ConsulFormBuilder < FoundationRailsHelper::FormBuilder
 
   def check_box(attribute, options = {})
     if options[:label] == false
-      super
+      inputvalue = super(attribute, options.merge(
+        label: false, class: "ds_checkbox__input", id: attribute)
+      )      
+      tag.div( inputvalue , class: "ds_checkbox ds_checkbox--smalls" )    
+    
     else
-      label = tag.span sanitize(label_text(attribute, options[:label])), class: "checkbox"
-
-      super(attribute, options.merge(
-        label: label,
-        label_options: { class: "checkbox-label" }.merge(label_options_for(options))
-      ))
+      inputvalue = super(attribute, options.merge(label: false, class: "ds_checkbox__input", id: attribute))
+      label = tag.label(sanitize(label_text(attribute, options[:label])), class: "ds_checkbox__label", for: attribute)
+      tag.div( inputvalue + label, class: "ds_checkbox ds_checkbox--smalls" )
     end
   end
 
