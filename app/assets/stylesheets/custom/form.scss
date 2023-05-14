@@ -1,0 +1,22 @@
+form {
+  input {
+    @extend .ds_input;
+  }
+  label {
+    @extend .ds_label;
+  }
+  select {
+    @extend .ds_select;
+  }
+}
+.advanced-filters-content {
+  .filter {
+    @extend .ds_checkbox;
+    input {
+      @extend .ds_checkbox__input;
+    }
+    label {
+      @extend .ds_checkbox__label;
+    }
+  }
+}

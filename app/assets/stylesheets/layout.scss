@@ -844,91 +844,91 @@ footer {
 // 06. Forms
 // ---------
 
-form {
+// form {
 
-  label {
-    font-size: $base-font-size;
-    font-weight: bold;
-    line-height: $line-height;
-  }
+//   label {
+//     font-size: $base-font-size;
+//     font-weight: bold;
+//     line-height: $line-height;
+//   }
 
-  .checkbox-label {
-    display: table;
-  }
+//   .checkbox-label {
+//     display: table;
+//   }
 
-  fieldset legend {
-    font-weight: bold;
-  }
+//   fieldset legend {
+//     font-weight: bold;
+//   }
 
-  [type="radio"] {
-    height: $line-height !important;
-    vertical-align: top;
+//   [type="radio"] {
+//     height: $line-height !important;
+//     vertical-align: top;
 
-    + label {
-      font-weight: normal;
-    }
+//     + label {
+//       font-weight: normal;
+//     }
 
-    &:checked + label {
-      font-weight: bold;
-    }
-  }
+//     &:checked + label {
+//       font-weight: bold;
+//     }
+//   }
 
-  [type]:not([type="button"], [type=checkbox], [type=file], [type=radio], [type=submit]) {
-    background: #f8f8f8;
-    height: $input-height;
-    margin-bottom: rem-calc(16);
+//   [type]:not([type="button"], [type=checkbox], [type=file], [type=radio], [type=submit]) {
+//     background: #f8f8f8;
+//     height: $input-height;
+//     margin-bottom: rem-calc(16);
 
-    &.error {
-      margin-bottom: rem-calc(1);
-    }
+//     &.error {
+//       margin-bottom: rem-calc(1);
+//     }
 
-    &:disabled {
-      background-color: $input-background-disabled;
-    }
-  }
+//     &:disabled {
+//       background-color: $input-background-disabled;
+//     }
+//   }
 
-  [type="checkbox"] + label,
-  [type="radio"] + label {
-    margin-right: 0;
-  }
+//   [type="checkbox"] + label,
+//   [type="radio"] + label {
+//     margin-right: 0;
+//   }
 
-  [type=file] {
-    margin: $line-height / 2 0 $line-height / 2 $line-height / 4;
-  }
+//   [type=file] {
+//     margin: $line-height / 2 0 $line-height / 2 $line-height / 4;
+//   }
 
-  .cke {
-    margin-bottom: $line-height;
-  }
+//   .cke {
+//     margin-bottom: $line-height;
+//   }
 
-  .html-area:not(.form-error) {
-    height: 272px;
-    margin-bottom: $line-height;
+//   .html-area:not(.form-error) {
+//     height: 272px;
+//     margin-bottom: $line-height;
 
-    &.admin {
-      height: 572px;
-    }
-  }
+//     &.admin {
+//       height: 572px;
+//     }
+//   }
 
-  .checkbox,
-  .radio {
-    font-weight: normal;
-    line-height: $line-height;
-    vertical-align: middle;
-  }
-}
+//   .checkbox,
+//   .radio {
+//     font-weight: normal;
+//     line-height: $line-height;
+//     vertical-align: middle;
+//   }
+// }
 
-.translatable-fields {
+// .translatable-fields {
 
-  &.highlight {
-    display: inline-block;
-    padding-top: $line-height;
-    width: 100%;
-  }
-}
+//   &.highlight {
+//     display: inline-block;
+//     padding-top: $line-height;
+//     width: 100%;
+//   }
+// }
 
-.translation-locale {
-  padding-top: $line-height;
-}
+// .translation-locale {
+//   padding-top: $line-height;
+// }
 
 // 07. Callout
 // -----------
