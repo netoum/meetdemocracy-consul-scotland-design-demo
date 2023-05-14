@@ -2,10 +2,15 @@
   @extend .ds_category-list;
   @extend .ds_category-list--grid;
   @extend .ds_category-list--narrow;
+  margin-right: 0!important;
+  margin-left: 0!important;
+  display: grid!important;
 }
 .card {
   @extend .ds_card;
   @extend .ds_card--has-hover;
+  width: 100% !important;
+
   p {
     @extend .ds_category-item__link;
   }
