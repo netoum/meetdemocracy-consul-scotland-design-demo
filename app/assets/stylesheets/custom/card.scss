@@ -10,14 +10,14 @@
   @extend .ds_card;
   @extend .ds_card--has-hover;
   width: 100% !important;
-
-  p {
-    @extend .ds_category-item__link;
-  }
 }
-.card .figure-card {
-  @extend .ds_aspect-box;
-  img {
-    @extend .ds_aspect-box__inner;
-  }
-}
+//   p {
+//     @extend .ds_category-item__link;
+//   }
+// }
+// .card .figure-card {
+//   @extend .ds_aspect-box;
+//   img {
+//     @extend .ds_aspect-box__inner;
+//   }
+// }

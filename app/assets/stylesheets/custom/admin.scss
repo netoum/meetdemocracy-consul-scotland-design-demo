@@ -1,0 +1,16 @@
+.locale-form {
+  display: inline-flex !important;
+}
+.admin-sidebar {
+  background: white !important;
+  ul {
+    @extend .ds_accordion;
+    li {
+      @extend .ds_accordion-item;
+    }
+    a {
+      @extend .ds_accordion-item__title;
+      color: black !important;
+    }
+  }
+}

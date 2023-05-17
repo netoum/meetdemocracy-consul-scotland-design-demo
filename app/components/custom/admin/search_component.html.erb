@@ -1,0 +1,13 @@
+<div class="search-form-header ds_site-search">
+  <%= form_tag(url, options) do |f| %>
+  <%= hidden_current_filter_tag %>
+  <div class="ds_input__wrapper  ds_input__wrapper--has-icon">
+    <input type="text" name="search" placeholder="<%= label %>" class="ds_input  ds_site-search__input"
+      value="<%= params[:search] %>" id="search">
+    <%= content %>
+    <button type="submit" class="ds_button  js-site-search-button">
+      <span class="visually-hidden"><%= t("admin.shared.search.search") %></span>
+      <span class="ds_icon icon-search"></span>
+    </button>
+  </div>
+  <% end %>
