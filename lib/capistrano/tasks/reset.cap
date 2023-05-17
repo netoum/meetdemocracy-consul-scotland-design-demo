@@ -1,0 +1,21 @@
+namespace :reset do
+  desc "reset settings"
+  task :settings do
+    on roles(:db) do
+      within release_path do
+        with rails_env: fetch(:rails_env) do
+          execute :rake, "settings:add_new_settings"
+        end
+      end
+    end
+  end
+  task :db do
+    on roles(:db) do
+      within release_path do
+        with rails_env: fetch(:rails_env) do
+          execute :rake, "db:dev_seed"
+        end
+      end
+    end
+  end
+end
