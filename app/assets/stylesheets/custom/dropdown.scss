@@ -1,0 +1,18 @@
+.is-dropdown-submenu{
+
+    li{
+        @extend .ds_site-navigation__item;
+    }
+    a{
+        @extend .ds_site-navigation__link;
+    }
+}
+
+.is-dropdown-submenu-parent a::after {
+    top: 0;
+    margin-top: -0px;
+  }
+  
+  .dropdown{
+    z-index: 9;
+  }
