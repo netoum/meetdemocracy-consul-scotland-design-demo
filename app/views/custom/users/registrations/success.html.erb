@@ -1,0 +1,15 @@
+<% provide(:title) { t("devise_views.users.registrations.success.title") } %>
+<div class="ds_notification-panel ds_notification-panel--success">
+  <h1 class="ds_notification-panel__title">
+    <%= t("devise_views.users.registrations.success.title") %>
+  </h1>
+  <div class="ds_notification-panel__content">
+    <ul class="no-bullet">
+      <li><%= sanitize(t("devise_views.users.registrations.success.thank_you")) %></li>
+      <li><%= sanitize(t("devise_views.users.registrations.success.instructions_1")) %></li>
+      <li><%= t("devise_views.users.registrations.success.instructions_2") %></li>
+    </ul>
+    <%= link_to t("devise_views.users.registrations.success.back_to_index"),
+    root_path, class: "ds_button" %>
+  </div>
+  </div>
