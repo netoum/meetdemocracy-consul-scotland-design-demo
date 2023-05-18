@@ -1,23 +1,24 @@
 def generate_content(page)
   page.title = I18n.t("welcome.welcome.title")
 
-  page.content = "<p>#{I18n.t("welcome.welcome.user_permission_info")}</p>
-                  <ul>
-                    <li>#{I18n.t("verification.user_permission_debates")}</li>
+  page.content = "<div class='ds_notification-panel ds_notification-panel--success'>
+                  <div class='ds_notification-panel__content'>
+                  <strong>#{I18n.t("welcome.welcome.user_permission_info")}</strong>
+                  <ul class='no-bullet'>
+                  <li>#{I18n.t("verification.user_permission_debates")}</li>
                     <li>#{I18n.t("verification.user_permission_proposal")}</li>
                   </ul>
-
-                  <p>#{I18n.t("welcome.welcome.user_permission_verify")}</p>
-                  <ul>
-                    <li>#{I18n.t("verification.user_permission_support_proposal")}</li>
-                    <li>#{I18n.t("verification.user_permission_votes")}</li>
+                  <strong>#{I18n.t("welcome.welcome.user_permission_verify")}</strong>
+                  <ul class='no-bullet'>
+                  <li>#{I18n.t("verification.user_permission_support_proposal")}</li>
+                  <li>#{I18n.t("verification.user_permission_votes")}</li>
                   </ul>
-
-                  <a href='/verification' class='button success radius expand'>
+                  <a href='/verification' class='ds_button success radius expand'>
                     #{I18n.t("welcome.welcome.user_permission_verify_my_account")}
                   </a>
-
-                  <p><a href='/'>#{I18n.t("welcome.welcome.go_to_index")}</a></p>"
+                  <a href='/' class='ds_button ds_button--cancel'>#{I18n.t("welcome.welcome.go_to_index")}</a>
+                  </div>
+                  </div>"
   page.save!
 end
 if SiteCustomization::Page.find_by(slug: "welcome_not_verified").nil?
